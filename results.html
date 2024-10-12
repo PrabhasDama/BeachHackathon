@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AiR-Up Results</title>
+    <link rel="stylesheet" href="styles_2.css">
+</head>
+
+<body class="fade-in">
+
+    <!-- Button to go back to the homepage -->
+    <div class="header">
+        <button class="back-to-home" onclick="window.location.href='index.html'">AiR-Up</button>
+    </div>
+
+    <!-- Results section -->
+    <div class="results-container">
+        <div class="result-column">
+            <h2>Claude</h2>
+            <p>Response from Claude...</p>
+        </div>
+        <div class="result-column">
+            <h2>Gemini</h2>
+            <p>Response from Gemini...</p>
+        </div>
+        <div class="result-column">
+            <h2>ChatGPT</h2>
+            <p>Response from ChatGPT...</p>
+        </div>
+        <div class="result-column">
+            <h2>Perplexity</h2>
+            <p>Response from Perplexity...</p>
+        </div>
+    </div>
+
+    <!-- Chatbot icon -->
+    <div class="chatbot-icon" onclick="toggleChatbot()">
+        <img src="images/chatbot-icon.png" alt="Chatbot">
+    </div>
+
+    <!-- Chatbot popup window -->
+    <div id="chatbot-container" class="chatbot-container hidden">
+        <div class="chatbot-header">
+            <span>How can I help?</span>
+            <button class="close-chatbot" onclick="toggleChatbot()">-</button>
+        </div>
+        <div class="chatbot-body">
+            <p>Suggested prompts:</p>
+            <div class="chatbot-suggestions">
+                <button onclick="sendChat('Summarize into one paragraph')">Summarize into one paragraph</button>
+                <button onclick="sendChat('Assist you with understanding a specific prompt')">Assist with
+                    understanding</button>
+                <button onclick="sendChat('Get additional help')">Get Help</button>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages"></div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="user-input" placeholder="Type your message here..." />
+            <button onclick="sendCustomMessage()">&#x27A4;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI ROUNDUP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>AI ROUNDUP</h1> <!-- Website name remains AI ROUNDUP here -->
+    </div>
+
+    <div id="search-section">
+        <input type="text" id="search-query" placeholder="What can I help you with today?">
+    </div>
+
+    <div class="checkboxes-container">
+        <label class="checkbox-label">
+            <input type="checkbox" id="claude"> Claude
+        </label>
+        <label class="checkbox-label">
+            <input type="checkbox" id="chatgpt"> ChatGPT
+        </label>
+        <label class="checkbox-label">
+            <input type="checkbox" id="gemini"> Gemini
+        </label>
+        <label class="checkbox-label">
+            <input type="checkbox" id="perplexity"> Perplexity
+        </label>
+    </div>
+
+    <div class="button-container">
+        <button class="search-button" onclick="performSearch()">SEARCH</button> <!-- Search button visible here -->
+    </div>
+
+    <script>
+        function performSearch() {
+            document.body.classList.add('fade-out');  // Add fade-out effect
+            setTimeout(function () {
+                window.location.href = 'results.html';  // Redirect to results page
+            }, 1000);  // Adjust time for smooth transition
+        }
+    </script>
+</body>
+
+</html>
