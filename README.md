@@ -122,12 +122,6 @@ This project was collaboratively developed by a team of four during the Cerebral
 
 ---
 
-## **License**
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
----
-
 ## **Feedback and Contributions**
 
 Feel free to fork this repository, submit issues, or create pull requests. Feedback and suggestions are always welcome!
